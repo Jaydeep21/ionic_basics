@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Course Selection</title>
+	<script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+	<link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet"></link>
+</head>
+<body>
+	<ion-app>
+		<ion-header >
+			<ion-toolbar color="primary">
+				<ion-title>My Courses</ion-title>
+			</ion-toolbar>
+		</ion-header>
+		<ion-content>
+			<ion-grid>
+				<ion-row>
+					<ion-col>
+						
+								<ion-item>
+									<ion-label position="floating">Course Name</ion-label>
+									<ion-input type="text" id="course-name"></ion-input>
+								</ion-item>
+								<ion-item>
+									<ion-label position="floating">Course Rating (1-5)</ion-label>
+									<ion-input type="number" id="course-rating"></ion-input>
+								</ion-item><br>
+								<ion-button margin id="btnAdd">Add</ion-button>
+							
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col>
+						<ion-list id="displayList"></ion-list>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-content>
+		<ion-alert-controller></ion-alert-controller>
+	</ion-app>
+	<script type="text/javascript" src="app1.js"></script>
+</body>
+</html>
